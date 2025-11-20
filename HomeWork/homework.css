@@ -1,35 +1,27 @@
-.div1 {
-    height: 150px;
-    width: 150px;
-    background-color: red;
-    position: absolute;
-    right: 0px;
-    top: 0px;
+body{
+    background-color: lightcoral;
 }
 
-.div2 {
-    height: 150px;
-    width: 150px;
-    background-color: blue;
-    position: absolute;
-    left: 0px;
-    top: 0px;
+@media(min-width:319px) and (max-width:480px){
+ body{
+    background-color: lightsalmon;
+ }
 }
 
-.div3 {
-    height: 150px;
-    width: 150px;
-    background-color: green;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
+@media(min-width:481px) and (max-width:1200px){
+ body{
+    background-color: powderblue;
+ }
 }
 
-.div4 {
-    height: 150px;
-    width: 150px;
-    background-color: yellow;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
+@media(min-width:1201px) and (max-width:1600px){
+ body{
+    background-color: limegreen;
+ }
+}
+
+@media(min-width:1600px){
+ body{
+    background-color: seagreen;
+ }
 }

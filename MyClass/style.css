@@ -1,3 +1,22 @@
 .container {
-    display:flex;
+    background-color: brown;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    gap: 10px;
+}
+
+.box{
+ background-color: crimson;
+ border: 1px solid red;
+ height: 200px;
+ flex-basis: 100px;
+ transition:0.3s;
+}
+
+.box:hover{
+ flex-grow: 0.05;
+ box-shadow: 0px 0px 50px red;
 }

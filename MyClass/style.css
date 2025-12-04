@@ -1,22 +1,10 @@
-.container {
-    background-color: brown;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    align-items: center;
-    height: 1000px;
-    gap: 10px;
+.container{
+    display:grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 100px;
 }
 
-.box{
- background-color: crimson;
- border: 1px solid red;
- height: 200px;
- flex-basis: 100px;
- transition:0.3s;
-}
-
-.box:hover{
- flex-grow: 0.05;
- box-shadow: 0px 0px 50px red;
+.container > div{
+    background-color: aquamarine;
+    border: 1px solid black;
 }

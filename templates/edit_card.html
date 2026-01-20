@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Edit Card</h3>
+<form method="POST" enctype="multipart/form-data" class="card p-4 shadow card-form">
+    <input class="form-control mb-2" name="name" value="{{ card.name }}" required>
+
+    <select class="form-select mb-2" name="section_id" required>
+        {% for section in sections %}
+        <option value="{{ section.id }}" {% if section.id==card.section_id %}selected{% endif %}>
+            {{ section.name }}</option>
+        {% endfor %}
+    </select>
+
+    <input type="file" name="image" class="form-control mb-2" accept="image/*" capture="environment">
+
+    <textarea class="form-control mb-2" name="description" required>{{ card.description }}</textarea>
+
+    <button class="btn btn-dark w-100">Update</button>
+</form>
+
+{% endblock %}

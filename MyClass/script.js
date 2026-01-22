@@ -1,6 +1,10 @@
-const Name = prompt("Enter your Name");
-const lastname = prompt("Enter your Lastname");
-const age = prompt("Enter your Age");
-const username = prompt("Enter your Username");
-const password = prompt("Enter your Password");
-alert("Hey " + Name + " " + lastname + " you are " + age + " years old, your username is " + username + " and your password is " + password)
+const num = prompt("Enter score between 1 to 100");
+const score = num / 10;
+
+if(score > 9){
+    alert("you passed successfuly");
+}else if(score > 5){
+    alert("you passed");
+}else{
+    alert("you failed");
+}

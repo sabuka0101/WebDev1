@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .box{
     border: solid 3px black;
     width: 300px;
@@ -12,4 +13,8 @@ h3{
 p{
     color:green;
     margin-left: 10px;
+=======
+body {
+    font-family: Cursive;
+>>>>>>> 38178d3afab5405cec9797e3c1de61141f661a52
 }

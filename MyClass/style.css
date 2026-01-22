@@ -1,3 +1,15 @@
-/* a{
- text-decoration: none !important;
-} */
+.box{
+    border: solid 3px black;
+    width: 300px;
+    height: 160px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+h3{
+    justify-self: center;
+    color:blue;
+}
+p{
+    color:green;
+    margin-left: 10px;
+}

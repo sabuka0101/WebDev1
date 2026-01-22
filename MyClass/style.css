@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-.box{
-    border: solid 3px black;
-    width: 300px;
-    height: 160px;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-h3{
-    justify-self: center;
-    color:blue;
-}
-p{
-    color:green;
-    margin-left: 10px;
-=======
 body {
     font-family: Cursive;
->>>>>>> 38178d3afab5405cec9797e3c1de61141f661a52
 }

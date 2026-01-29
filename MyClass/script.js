@@ -1,10 +1,6 @@
-const num = prompt("Enter score between 1 to 100");
-const score = num / 10;
+let start = prompt("Enter First Number");
+let end = prompt("Enter Second Number");
 
-if(score > 9){
-    alert("you passed successfuly");
-}else if(score > 5){
-    alert("you passed");
-}else{
-    alert("you failed");
+for(; start<=end; start++){
+    console.log(start);
 }

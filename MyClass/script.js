@@ -1,6 +1,14 @@
-const Name = prompt("Enter your Name");
-const lastname = prompt("Enter your Lastname");
 const age = prompt("Enter your Age");
-const username = prompt("Enter your Username");
-const password = prompt("Enter your Password");
-alert("Hey " + Name + " " + lastname + " you are " + age + " years old, your username is " + username + " and your password is " + password)
+const parent = prompt("Are you with adult? (yes/no)");
+const ticket = prompt("Do you have the ticket? (yes/no)");
+const time = prompt("Are you late? (yes/no)");
+
+if (age >= 18 && ticket === "yes" && time === "no") {
+    alert("You can watch the movie")
+} else if (age >= 13 && parent === "yes" && ticket === "yes") {
+    alert("You can watch the movie")
+} else if (time === "yes" && ticket === "no") {
+    alert("You can't watch the movie")
+} else {
+    alert("You can't watch the movie")
+}

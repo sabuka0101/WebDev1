@@ -1,6 +1,10 @@
-let start = prompt("Enter First Number");
-let end = prompt("Enter Second Number");
+let num = prompt("Enter The Number");
 
-for(; start<=end; start++){
-    console.log(start);
+while(num !== 20){
+    num = prompt("try again")
+    if(num<20){
+        alert("higher")
+    }else if(num>20){
+        alert("lower")
+    }
 }

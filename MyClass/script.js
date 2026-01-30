@@ -1,11 +1,11 @@
-let num = prompt("Enter The Number");
+let num = Number(prompt("Enter The Number"));
 
-while (num != 20) {
+while (num !== 20) {
     if (num < 20) {
         alert("higher")
     } else if (num > 20) {
         alert("lower")
     }
-    num = prompt("Try again")
+    num = Number(prompt("Try again"));
 }
 alert("You've guessed the number")

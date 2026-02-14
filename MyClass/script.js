@@ -1,11 +1,24 @@
-let num = Number(prompt("Enter The Number"));
-
-while (num !== 20) {
-    if (num < 20) {
-        alert("higher")
-    } else if (num > 20) {
-        alert("lower")
+const company = {
+    frontend: {
+        John: 1200,
+        Mary: 1500
+    },
+    backend: {
+        Peter: 1800,
+        Anna: 2000
+    },
+    design: {
+        Lucy: 1300
     }
-    num = Number(prompt("Try again"));
+};
+
+function analyzeCompany() {
+    let salary = 0;
+
+    for (department in company) {
+        for (employee in company[department]) {
+            salary += company[department][employee];
+        }
+    }
 }
-alert("You've guessed the number")
+analyzeCompany();

@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
-
   <body>
-    <input id="num1" type="number" placeholder="First number" />
-    <input id="num2" type="number" placeholder="Second number" />
-    <button id="addBtn" onclick="sum()">Add</button>
-    <p id="result"></p>
-    <script src="script.js"></script>
+    <div class="container">
+      <h1>Login</h1>
+      <p id="error-message" class="error-message"></p>
+      <form class="login-form" onsubmit="LogIn(event)">
+        უნდა შევქმნათ ფორმა სადაც მაქვს ველები username, password, remember,
+        forgot password, sign up
+      </form>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>

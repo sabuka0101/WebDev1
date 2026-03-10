@@ -1,37 +1,22 @@
-const text = document.getElementById("text");
-const password = document.getElementById("password");
+const form = document.querySelector("form");
+const username = document.form.username;
+const password = document.form.password;
 const message = document.getElementById("error-message");
 
-const database = [
-  { username: "alice", password: "alice123" },
-  { username: "bob", password: "bob123" },
-  { username: "charlie", password: "charlie123" },
-];
-
-function LogIn(event) {
+function Login(event) {
   event.preventDefault();
 
-  if (text.value === "" && password.value === "") {
-    message.textContent = "Enter your Username and Password";
+  if (username.value === "" || password.value === "") {
+    message.textContent = "Please fill all the inputs";
     message.style.color = "rgb(238, 56, 56)";
-  } else if (text.value === "") {
-    message.textContent = "Enter your Username";
+  } else if (username.value.length <= 4) {
+    message.textContent = "Username length must be more than 4";
     message.style.color = "rgb(238, 56, 56)";
-  } else if (password.value === "") {
-    message.textContent = "Enter your Password";
+  } else if (password.value.length <= 6) {
+    message.textContent = "Password length must be more than 6";
     message.style.color = "rgb(238, 56, 56)";
   } else {
-    message.textContent = "Login is Invalid";
-    message.style.color = "rgb(238, 56, 56)";
-  }
-
-  for (let i = 0; i < database.length; i++) {
-    if (
-      database[i].username === text.value &&
-      database[i].password === password.value
-    ) {
-      message.textContent = "Login successful";
-      message.style.color = "rgb(28, 179, 28)";
-    }
+    message.textContent = "Login successful";
+    message.style.color = "rgb(28, 179, 28)";
   }
 }

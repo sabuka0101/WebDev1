@@ -5,58 +5,76 @@ body {
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
+}
+.navbar {
   display: flex;
+  box-shadow: 0px 0px 5px black;
+  margin-left: -25px;
+  margin-top: -10px;
+  margin-right: -7px;
+  padding: 30px;
   justify-content: center;
   align-items: center;
-  height: 90vh;
 }
-h1 {
-  color: rgb(80, 78, 78);
+ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
 }
-#main {
-  box-shadow: 0px 0px 5px black;
-  border-radius: 5px;
-  border: none;
-  width: 400px;
-  padding-bottom: 25px;
+a {
+  text-decoration: none;
+  color: gray;
+  font-weight: 500;
+  font-size: 20px;
+}
+.logo {
+  position: absolute;
+  left: 100px;
+  top: 20px;
   justify-items: center;
 }
-.type {
-  height: 35px;
-  width: 300px;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 0px 0px 5px black;
-  outline: none;
-  font-size: large;
-  margin-left: 45px;
-}
-#submitBtn {
-  background-color: rgb(65, 93, 253);
-  border-radius: 40px;
-  border: none;
+.shop {
   color: white;
-  width: 300px;
-  height: 50px;
-  cursor: pointer;
-  box-shadow: 0px 2px 5px black;
-  margin-top: 15px;
-  transform: scale(1);
-  transition: 0.3s;
-  margin-left: 45px;
+  background-color: rgb(45, 113, 240);
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  font-weight: 600;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 17px;
 }
-#submitBtn:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-#submitBtn:active {
-  transform: scale(1);
-  transition: none;
-}
-#error-message {
+.text {
+  position: relative;
+  bottom: 15px;
+  color: gray;
   font-weight: 500;
-  margin-right: 45px;
 }
-p {
-  margin-left: 45px;
+.searchTab {
+  position: absolute;
+  right: 100px;
+  justify-items: center;
+}
+.searchTabBtn {
+  padding: 10px;
+  font-size: 20px;
+  background-color: white;
+  border: none;
+  margin-left: 10px;
+  box-shadow: 0px 0px 2px black;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.main {
+  display: grid;
+}
+.firstCard {
+}
+.secondCard {
+  border-radius: 5px;
+  color: gray;
 }

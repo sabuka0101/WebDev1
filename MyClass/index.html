@@ -7,19 +7,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div id="main">
-        <h1>Login</h1>
-      <p id="error-message" class="error-message"></p>
-      <form class="login-form" onsubmit="Login(event)" name="form">
-          <p>Username</p>
-          <input type="text" class="type" name="username"/>
-          <br>
-          <p>Password</p>
-          <input type="password" class="type" name="password"/>
-          <button id="submitBtn">Submit</button>
-        </div>
-      </form>
+    <div class="navbar">
+      <div class="logo">
+        <p class="shop">SHOP.</p>
+        <p class="text">BOX-MMA STORE</p>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="searchTab">
+        <button class="searchTabBtn">🔎</button>
+        <button class="searchTabBtn">🛒</button>
+      </div>
+    </div>
+    <div class="main">
+      <div class="firstCard">
+        <p>NEW COLLECTION</p>
+        <h1>Everyday essentials, thoughtfully designed.</h1>
+        <p>
+          A simple, clean layout for your future e-commerce store. Products are
+          static for now,but the design is ready for real data later
+        </p>
+      </div>
+      <div class="secondCard">
+        <img class="secondCardImg" src="" />
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

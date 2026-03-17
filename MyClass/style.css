@@ -5,7 +5,9 @@ body {
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
+  background-color: rgb(240, 237, 237);
 }
+
 .navbar {
   display: flex;
   box-shadow: 0px 0px 5px black;
@@ -15,24 +17,38 @@ body {
   padding: 30px;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
-ul {
+
+.headerList {
   display: flex;
   gap: 25px;
   list-style: none;
 }
-a {
+
+.headerTags {
   text-decoration: none;
   color: gray;
   font-weight: 500;
   font-size: 20px;
+  transition: 0.3s;
 }
+.headerTags:hover {
+  text-shadow: 0px 0px 2px gray;
+  transition: 0.3s;
+}
+.headerTags:active {
+  text-shadow: none;
+  transition: none;
+}
+
 .logo {
   position: absolute;
   left: 100px;
   top: 20px;
   justify-items: center;
 }
+
 .shop {
   color: white;
   background-color: rgb(45, 113, 240);
@@ -46,35 +62,232 @@ a {
   padding-bottom: 5px;
   font-size: 17px;
 }
+
 .text {
   position: relative;
   bottom: 15px;
   color: gray;
   font-weight: 500;
 }
+
 .searchTab {
   position: absolute;
   right: 100px;
   justify-items: center;
 }
+
 .searchTabBtn {
   padding: 10px;
   font-size: 20px;
   background-color: white;
-  border: none;
+  border: 1px solid gray;
   margin-left: 10px;
-  box-shadow: 0px 0px 2px black;
+  box-shadow: 0px 0px 2px gray;
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 20px;
   cursor: pointer;
+  transition: 0.3s;
 }
+.searchTabBtn:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.searchTabBtn:active {
+  transform: scale(1);
+  transition: none;
+}
+
 .main {
   display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
-.firstCard {
-}
+
 .secondCard {
-  border-radius: 5px;
+  border-radius: 15px;
+  background-color: white;
+  width: 600px;
+  height: 400px;
+  margin-left: 100px;
+}
+.newCollection {
+  border: solid 1px rgb(45, 113, 240);
+  color: rgb(45, 113, 240);
+  width: 150px;
+  text-align: center;
+  border-radius: 15px;
+}
+.browseProducts {
+  background-color: rgb(45, 113, 240);
+  border: solid 1px rgb(45, 113, 240);
+  color: white;
+  border-radius: 30px;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.browseProducts:hover {
+  background-color: white;
+  border: solid 1px rgb(45, 113, 240);
+  color: rgb(45, 113, 240);
+  transition: 0.3s;
+}
+.browseProducts:active {
+  background-color: rgb(45, 113, 240);
+  border: solid 1px rgb(45, 113, 240);
+  color: white;
+  transition: none;
+}
+.learnMore {
+  background-color: rgb(240, 237, 237);
+  border: solid 1px gray;
+  border-radius: 30px;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  transition: 0.06s;
+}
+.learnMore:active {
+  transform: scale(0.92);
+  transition: 0.06s;
+}
+.secondCardImg {
+  width: 550px;
+  height: 300px;
+  border-radius: 15px;
+  margin-left: 25px;
+  margin-top: 25px;
+  background-color: gray;
+}
+.secondCardText {
+  font-weight: 500;
+  margin-left: 25px;
+}
+.secondCardPrice {
+  margin-left: 25px;
+  margin-top: -15px;
+}
+.secondCardStock {
   color: gray;
+  margin-left: 420px;
+  margin-top: -35px;
+  font-weight: 500;
+}
+.productsSection {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.productsDescription {
+  color: gray;
+  font-weight: 500;
+  margin-top: -10px;
+}
+.buttons input {
+  display: none;
+}
+.buttons label {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: gray;
+  border: solid 1px rgb(240, 237, 237);
+  background: white;
+  border-radius: 25px;
+}
+.buttons input:checked + label {
+  border: solid 1px rgb(45, 113, 240);
+  background: rgb(203, 218, 245);
+  color: rgb(45, 113, 240);
+}
+.buttonsContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -40px;
+}
+.card {
+  background-color: white;
+  width: 330px;
+  height: 410px;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.cardImg {
+  width: 300px;
+  margin-left: 14.5px;
+  margin-top: 14.5px;
+  border-radius: 20px;
+  height: 200px;
+  background-color: gray;
+}
+.cardTitle {
+  margin-left: 15px;
+  font-weight: 500;
+}
+.cardDescription {
+  margin-left: 15px;
+  color: gray;
+  font-weight: 500;
+  margin-top: -10px;
+}
+.cardPrice {
+  margin-left: 15px;
+  margin-top: -10px;
+}
+.cardBtn {
+  background-color: rgb(45, 113, 240);
+  border: solid 1px rgb(45, 113, 240);
+  color: white;
+  border-radius: 30px;
+  padding: 15px;
+  padding-left: 110px;
+  padding-right: 110px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 18.5px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.cardBtn:hover {
+  background-color: white;
+  border: solid 1px rgb(45, 113, 240);
+  color: rgb(45, 113, 240);
+  transition: 0.3s;
+}
+.cardBtn:active {
+  background-color: rgb(45, 113, 240);
+  border: solid 1px rgb(45, 113, 240);
+  color: white;
+  transition: none;
+}
+.footer {
+  background-color: white;
+  margin-left: -25px;
+  margin-bottom: -15px;
+  margin-top: 100px;
+  margin-right: -7px;
+  padding: 10px;
+}
+.footerLogo {
+  margin-left: 100px;
+  width: 300px;
+}
+.footerLogoText {
+  margin-left: 3px;
+}
+.footerList {
+  display: flex;
+  position: absolute;
+  right: 100px;
+  margin-top: -120px;
 }

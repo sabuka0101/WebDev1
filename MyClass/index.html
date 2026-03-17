@@ -12,11 +12,11 @@
         <p class="shop">SHOP.</p>
         <p class="text">BOX-MMA STORE</p>
       </div>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul class="headerList">
+        <li><a href="#" class="headerTags">Home</a></li>
+        <li><a href="#" class="headerTags">Shop</a></li>
+        <li><a href="#" class="headerTags">About</a></li>
+        <li><a href="#" class="headerTags">Contact</a></li>
       </ul>
       <div class="searchTab">
         <button class="searchTabBtn">🔎</button>
@@ -25,15 +25,97 @@
     </div>
     <div class="main">
       <div class="firstCard">
-        <p>NEW COLLECTION</p>
+        <p class="newCollection">NEW COLLECTION</p>
         <h1>Everyday essentials, thoughtfully designed.</h1>
         <p>
           A simple, clean layout for your future e-commerce store. Products are
           static for now,but the design is ready for real data later
         </p>
+        <button class="browseProducts">Browse Products</button>
+        <button class="learnMore">Learn More</button>
       </div>
       <div class="secondCard">
-        <img class="secondCardImg" src="" />
+        <img class="secondCardImg" />
+        <p class="secondCardText">Venum MMA Gloves</p>
+        <p class="secondCardPrice">$75.00</p>
+        <p class="secondCardStock">In stock · Free Shipping</p>
+      </div>
+    </div>
+    <div class="productsSection">
+      <h3 class="productsText">Products</h3>
+      <p class="productsDescription">
+        A fixed list of items for now, Later, this can be powered by an API and
+        JavaScript.
+      </p>
+      <div class="buttonsContainer">
+        <div class="buttons">
+          <input type="radio" name="option" id="btn1" checked />
+          <label for="btn1">All</label>
+          <input type="radio" name="option" id="btn2" />
+          <label for="btn2">MMA</label>
+          <input type="radio" name="option" id="btn3" />
+          <label for="btn3">Box</label>
+          <input type="radio" name="option" id="btn4" />
+          <label for="btn4">Home</label>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img class="cardImg" />
+          <p class="cardTitle">MMA Gloves</p>
+          <p class="cardDescription">Good MMA Gloves</p>
+          <p class="cardPrice">$75.00</p>
+          <button class="cardBtn">Add to cart</button>
+        </div>
+        <div class="card">
+          <img class="cardImg" />
+          <p class="cardTitle">MMA Gloves</p>
+          <p class="cardDescription">Good MMA Gloves</p>
+          <p class="cardPrice">$75.00</p>
+          <button class="cardBtn">Add to cart</button>
+        </div>
+        <div class="card">
+          <img class="cardImg" />
+          <p class="cardTitle">MMA Gloves</p>
+          <p class="cardDescription">Good MMA Gloves</p>
+          <p class="cardPrice">$75.00</p>
+          <button class="cardBtn">Add to cart</button>
+        </div>
+        <div class="card">
+          <img class="cardImg" />
+          <p class="cardTitle">MMA Gloves</p>
+          <p class="cardDescription">Good MMA Gloves</p>
+          <p class="cardPrice">$75.00</p>
+          <button class="cardBtn">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footerLogo">
+        <p class="shop">SHOP.</p>
+        <p class="text footerLogoText">
+          Simple layout now, ready to grow into a full e-commerce experience.
+        </p>
+      </div>
+      <div class="footerList">
+        <ul style="list-style: none">
+          <li><b>Shop</b></li>
+          <li style="margin-top: 4px; color: gray">All products</li>
+          <li style="margin-top: 2px; color: gray">New arrivals</li>
+          <li style="margin-top: 2px; color: gray">Gift cards</li>
+        </ul>
+        <ul style="list-style: none">
+          <li><b>Company</b></li>
+          <li style="margin-top: 4px; color: gray">About</li>
+          <li style="margin-top: 2px; color: gray">Blog</li>
+          <li style="margin-top: 2px; color: gray">Careers</li>
+        </ul>
+        <ul style="list-style: none">
+          <li><b>Support</b></li>
+          <li style="margin-top: 4px; color: gray">Help center</li>
+          <li style="margin-top: 2px; color: gray">Shipping</li>
+          <li style="margin-top: 2px; color: gray">Returns</li>
+        </ul>
       </div>
     </div>
     <script src="script.js"></script>

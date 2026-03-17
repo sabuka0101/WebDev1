@@ -212,12 +212,12 @@ body {
 }
 .card {
   background-color: white;
-  width: 330px;
+  width: 330px !important;
   height: 410px;
   border-radius: 20px;
   margin-top: 25px;
 }
-.cards {
+#cards {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -253,7 +253,6 @@ body {
   padding-left: 110px;
   padding-right: 110px;
   cursor: pointer;
-  margin-top: 20px;
   margin-left: 18.5px;
   font-size: 14px;
   transition: 0.3s;

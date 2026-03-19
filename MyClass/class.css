@@ -1,11 +1,48 @@
-#container {
-  border: solid 2px black;
-  border-radius: 5px;
-  padding: 25px;
-  width: 500px;
+body {
+  font-family: cursive;
 }
-#card {
-  border: solid 2px black;
-  border-radius: 10px;
-  margin-top: 5px;
+.btn {
+  width: 60px;
+  height: 60px;
+  background: coral;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-self: flex-end;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn.open {
+  width: 100px;
+}
+.box {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  border-radius: 3px;
+}
+.box.bottom {
+  transform: rotate(45deg);
+  margin-top: -30px;
+}
+.box.middle {
+  transform: rotate(-45deg);
+}
+.box.top {
+  display: none;
+}
+#main {
+  background-color: gray;
+  color: white;
+  margin-top: -8px;
+  margin-left: -150px;
+  width: 200px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  height: 100vh;
 }

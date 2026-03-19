@@ -1,14 +1,13 @@
-const movies = [
-  { title: "Batman", year: 2022, description: "this is movie about bats" },
-  { title: "Avatar", year: 2009, description: "this is movie about blue guys" },
-  { title: "Inception", year: 2010, description: "this is deep movie" },
-];
+const btn = document.querySelector(".btn");
+const box = document.querySelector(".box");
+const top = document.querySelector(".top");
+const middle = document.querySelector(".middle");
+const bottom = document.querySelector(".bottom");
+const container = document.getElementById("main");
 
-const container = document.getElementById("container");
-
-for (i = 0; i < movies.length; i++) {
-  container.innerHTML += `<div id='card'><h3>${movies[i].title}</h3>
-  <p>Release Date:${movies[i].year}</p>
-  <p>${movies[i].description}</p
-  </div>`;
-}
+btn.addEventListener("click", () => {
+  btn.classList.toggle("open");
+  box.classList.toggle("top");
+  box.classList.toggle("bottom");
+  box.classList.toggle("middle");
+});

@@ -1,16 +1,4 @@
-const cardsInfo = [
-  {
-    title: "MMA Gloves",
-    price: 60,
-    description: "This is really great MMA Gloves for sparring",
-  },
-  {
-    title: "Boxing Gloves",
-    price: 75,
-    description: "This is really great Boxing Gloves for sparring",
-  },
-];
-
+import { cartInfo, cardsInfo } from "./data.js";
 const cards = document.getElementById("cards");
 
 for (let i = 0; i < cardsInfo.length; i++) {
@@ -22,3 +10,9 @@ for (let i = 0; i < cardsInfo.length; i++) {
   <button class="cardBtn">Add to cart</button>
   </div>`;
 }
+const addBtn = document.querySelectorAll(".cardBtn");
+addBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    console.log("item is adding to cart");
+  });
+});

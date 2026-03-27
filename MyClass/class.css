@@ -4,7 +4,7 @@ body {
 .btn {
   width: 60px;
   height: 60px;
-  background: coral;
+  background: #fa5252;
   border: none;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@ body {
   justify-self: flex-end;
   align-items: center;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 .btn.open {
   width: 100px;
@@ -29,10 +29,10 @@ body {
   margin-top: -32.5px;
 }
 .box.middle {
-  transform: rotate(-45deg);
+  display: none;
 }
 .box.top {
-  display: none;
+  transform: rotate(-45deg);
 }
 .main {
   background-color: gray;

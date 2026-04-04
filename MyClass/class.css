@@ -1,60 +1,30 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-.btn {
-  width: 60px;
-  height: 60px;
-  background: #fa5252;
-  border: none;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  justify-self: flex-end;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.btn.open {
-  width: 100px;
-}
-.box {
-  width: 35px;
-  height: 5px;
-  background-color: white;
-  border-radius: 3px;
-  transition: 0.3s;
-}
-.box.bottom {
-  transform: rotate(45deg);
-  margin-top: -32.5px;
-}
-.box.middle {
-  display: none;
-}
-.box.top {
-  transform: rotate(-45deg);
-}
-.main {
-  background-color: gray;
-  color: white;
-  margin-top: -8px;
-  margin-left: -150px;
-  width: 200px;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 100vh;
-  transition: 0.3s;
 }
-.main.opened {
-  margin-left: -10px;
-  transition: 0.3s;
-}
-a {
-  text-decoration: none;
+
+.btn {
+  background-color: blue;
   color: white;
-  font-weight: 600;
+  border: none;
+  border-radius: 15px;
+  padding: 30px;
+  cursor: pointer;
+  font-size: 30px;
+}
+.btn.active {
+  background-color: green;
+}
+.icon {
+  transition: 0.3s;
+}
+
+.icon.animate {
+  transform: rotate(180deg);
+}
+
+.icon.show {
+  transform: rotate(360deg);
 }

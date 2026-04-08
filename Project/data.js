@@ -14,7 +14,7 @@ export const cardsInfo = [
     description: "This is really great Boxing Gloves for sparring",
   },
   {
-    id: 1,
+    id: 2,
     title: "Boxing Gloves",
     img: "https://static.vecteezy.com/system/resources/thumbnails/057/068/323/small/single-fresh-red-strawberry-on-table-green-background-food-fruit-sweet-macro-juicy-plant-image-photo.jpg",
     price: 75,

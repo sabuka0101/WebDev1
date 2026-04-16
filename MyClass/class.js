@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-const numbers = [1, 2, 3, 4];
-
-const num = (x) => x * 2;
-
-function myMap(callback) {
-  let newNumbers = [];
-  for (let i = 0; i < numbers.length; i++) {
-    newNumbers.push(callback(numbers[i]));
-  }
-  return newNumbers;
-}
-
-console.log(myMap(num));
-=======
 const users = [
   {
     userId: 1,
@@ -100,4 +85,3 @@ users.forEach((user) => {
 // }
 
 // spread operator, desctructuring
->>>>>>> 61e59591fbd70023097770e302ec37f4744c1c1a

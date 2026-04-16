@@ -79,10 +79,11 @@ body {
 .searchTabBtn {
   padding: 10px;
   font-size: 20px;
+  color: gray;
   background-color: white;
   border: 1px solid gray;
   margin-left: 10px;
-  box-shadow: 0px 0px 2px gray;
+  box-shadow: 0px 0px 1px gray;
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 20px;
@@ -96,6 +97,10 @@ body {
 .searchTabBtn:active {
   transform: scale(1);
   transition: none;
+}
+.cartLink {
+  text-decoration: none;
+  color: gray;
 }
 
 .main {
@@ -246,30 +251,59 @@ body {
   margin-left: 15px;
   margin-top: -10px;
 }
-.cardBtn {
+.buyBtn {
   background-color: rgb(45, 113, 240);
   border: solid 1px rgb(45, 113, 240);
   color: white;
-  border-radius: 30px;
+  border-radius: 10px;
   padding: 15px;
-  padding-left: 110px;
-  padding-right: 110px;
+  padding-left: 90px;
+  padding-right: 90px;
   cursor: pointer;
-  margin-left: 18.5px;
+  margin-left: 15px;
   font-size: 14px;
   transition: 0.3s;
 }
-.cardBtn:hover {
+.buyBtn:hover {
   background-color: white;
   border: solid 1px rgb(45, 113, 240);
   color: rgb(45, 113, 240);
   transition: 0.3s;
 }
-.cardBtn:active {
+.buyBtn:active {
   background-color: rgb(45, 113, 240);
   border: solid 1px rgb(45, 113, 240);
   color: white;
   transition: none;
+}
+.addBtn {
+  background-color: rgb(45, 113, 240);
+  border: solid 1px rgb(45, 113, 240);
+  color: white;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.addBtn.active {
+  border: solid 1px green;
+  background-color: green;
+  padding-left: 23px;
+}
+.icon {
+  transition: 0.3s;
+}
+
+.icon.animate {
+  transform: rotate(180deg);
+}
+
+.icon.show {
+  transform: rotate(360deg);
+}
+.cardBtns {
+  display: flex;
+  gap: 4px;
 }
 .footer {
   background-color: white;

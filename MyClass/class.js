@@ -1,76 +1,3 @@
-const users = [
-  {
-    userId: 1,
-    id: 1,
-    title: "delectus aut autem",
-    completed: false,
-  },
-  {
-    userId: 1,
-    id: 2,
-    title: "quis ut nam facilis et officia qui",
-    completed: false,
-  },
-  {
-    userId: 1,
-    id: 3,
-    title: "fugiat veniam minus",
-    completed: false,
-  },
-  {
-    userId: 1,
-    id: 4,
-    title: "et porro tempora",
-    completed: true,
-  },
-  {
-    userId: 1,
-    id: 5,
-    title: "laboriosam mollitia et enim quasi adipisci quia provident illum",
-    completed: false,
-  },
-  {
-    userId: 1,
-    id: 6,
-    title: "qui ullam ratione quibusdam voluptatem quia omnis",
-    completed: false,
-  },
-  {
-    userId: 1,
-    id: 7,
-    title: "illo expedita consequatur quia in",
-    completed: false,
-  },
-  {
-    userId: 1,
-    id: 8,
-    title: "quo adipisci enim quam ut ab",
-    completed: true,
-  },
-  {
-    userId: 1,
-    id: 9,
-    title: "molestiae perspiciatis ipsa",
-    completed: false,
-  },
-  {
-    userId: 1,
-    id: 10,
-    title: "illo est ratione doloremque quia maiores aut",
-    completed: true,
-  },
-];
-const body = document.body;
-users.forEach((user) => {
-  body.innerHTML += `<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">${user.userId}</h5>
-    <h6 class="card-subtitle mb-2 text-body-secondary">${user.id}</h6>
-    <p class="card-text">${user.title}</p>
-    <p class="card-text">${user.completed}</p>
-  </div>
-</div>`;
-});
 //https://aroma-store-theme.myshopify.com/
 //array-methods: join, concat, pop, push, unshift, shift, slice, splice, reverse
 
@@ -85,3 +12,21 @@ users.forEach((user) => {
 // }
 
 // spread operator, desctructuring
+
+const orders = [
+  { id: 1, user: "Nino", items: 3, total: 45, paid: true },
+  { id: 2, user: "Gio", items: 5, total: 120, paid: false },
+  { id: 3, user: "Saba", items: 2, total: 30, paid: true },
+  { id: 4, user: "Lia", items: 10, total: 300, paid: true },
+  { id: 5, user: "Dato", items: 1, total: 15, paid: false },
+  { id: 6, user: "Ana", items: 4, total: 80, paid: true },
+];
+const result = orders.filter(
+  (order) => order.paid === true && order.total >= 50 && order.items > 3,
+);
+const result1 = result.sort((a, b) => b.total - a.total);
+const result2 = result1.map(
+  (orderUser) => `${orderUser.user} - ${orderUser.total}$`,
+);
+
+console.log(result2);

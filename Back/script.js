@@ -4,6 +4,7 @@ const app = express();
 app.use(express.json());
 
 const products = [
+  { id: 0, name: "computer", price: 35 },
   { id: 1, name: "mouse", price: 30 },
   { id: 2, name: "keyboard", price: 20 },
   { id: 3, name: "screen", price: 25 },

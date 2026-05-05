@@ -9,21 +9,39 @@ const products = [
   { id: 2, name: "keyboard", price: 20 },
   { id: 3, name: "screen", price: 25 },
 ];
+
+const users = [
+  { id: 0, name: "saba", pass: "saba123" },
+  { id: 1, name: "tazo", pass: "tazo123" },
+];
+
 app.get("/products", (req, res) => {
   res.send(products);
 });
+
 app.get("/products/:id", (req, res) => {
   console.log(req.params.id);
   const parsedId = parseInt(req.params.id);
   res.send(products[parsedId]);
 });
 
-app.set("view engine", "ejs");
-app.get("/users", (req, res) => {
-  res.send(users);
+app.post("/products", (req, res) => {
+  const { id, ...body } = req.body;
+  const newId = products.length;
+  products.push({ id: newId, ...body });
+  console.log(products);
+  res.send(products);
 });
-app.post("/users", (req, res) => {
-  console.log(req.body);
+app.post("/login", (req, res) => {
+  const User = req.body;
+  const isUser = users.find(
+    (user) => user.name === User.name && user.pass === User.pass,
+  );
+  if (isUser) {
+    res.send("user found");
+  } else {
+    res.send("user not found");
+  }
 });
 
 app.listen(3000, () => {

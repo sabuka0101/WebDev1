@@ -32,16 +32,20 @@ app.post("/products", (req, res) => {
   console.log(products);
   res.send(products);
 });
-app.post("/login", (req, res) => {
-  const User = req.body;
-  const isUser = users.find(
-    (user) => user.name === User.name && user.pass === User.pass,
-  );
-  if (isUser) {
-    res.send("user found");
-  } else {
-    res.send("user not found");
+app.patch("/products/:id", (req, res) => {
+  const {
+    params: { id },
+  } = req;
+  const parsedId = parseInt(id);
+  if (isNaN(parsedId)) {
+    res.send("send number");
   }
+  let product = products.find((product) => product.id === parsedId);
+  if (!product) {
+    res.send("info doesnt exist");
+  }
+  products[parsedId] = { ...products[parsedId], price: req.body.price };
+  res.send("updated successfully");
 });
 
 app.listen(3000, () => {
